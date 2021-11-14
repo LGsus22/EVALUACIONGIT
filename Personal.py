@@ -1,23 +1,22 @@
 """Archivo para las clases"""
 print("Archivo modificado en pycharm")
-class Puesto:
-    def __init__(self, Gerente, Empleado, Jefe):
-        self.__Gerente=Gerente
-        self.__Empleado=Empleado
-        self.__Jefe=Jefe
-    def GetGerente(self):
-        return self.__Gerente
-    def GetEmpleado(self):
-        return self.__Empleado
-    def GetJefe(self):
-        return self.__Jefe
-
-class Uniforme:
-    def __init__(self, Comercial, Operativo, Seguridad, Sectorsalud):
-        self.__Comercial=Comercial
-        self.__Operativo=Operativo
-        self.__Seguridad=Seguridad
-        self.__Sectorsalud=Sectorsalud
+class Gerente:
+    def __init__(self, Nombre, Altura, Edad, Vestimenta):
+        self.__Vestimenta=Vestimenta
+        self.__Altura=Altura
+        self.__Edad=Edad
+        self.__Nombre=Nombre
+    def getInfo(self):
+        print("El nombre es: ", self.__Nombre)
+        print("La edad es: ", self.__Edad)
+        print("La altura es:", self.__Altura)
+        print("La vestimenta es: ", self.__Vestimenta)
+    def Entrevistando(self):
+        return ("El Gerente esta entrevistando a una persona")
+    def Supervisando(self):
+        return ("El Gerente esta supervisando las áreas de trabajo")
+    def Noasiste(self):
+        return ("El gerente no asistio")
 
 
 
