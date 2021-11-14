@@ -19,12 +19,9 @@ class Gerente:
         return ("El gerente no asistio")
 class Empleado(Gerente):
     def __init__(self, Nombre, Altura, Edad, Vestimenta):
-        super().__init__(self, Nombre, Altura, Edad, Vestimenta)
+        super().__init__(Nombre, Altura, Edad, Vestimenta)
     def getInfo(self):
-        print("El nombre es: ", self.__Nombre)
-        print("La edad es: ", self.__Edad)
-        print("La altura es:", self.__Altura)
-        print("La vestimenta es: ", self.__Vestimenta)
+        super().getInfo()
     def Trabajanto(self):
         print("El empleado esta trabajando.")
     def Descansando(self):
@@ -33,12 +30,9 @@ class Empleado(Gerente):
         print("El trabajador esta cobrando.")
 class Persona(Gerente):
     def __init__(self, Nombre, Altura, Edad, Vestimenta):
-        super().__init__(self, Nombre, Altura, Edad, Vestimenta)
+        super().__init__(Nombre, Altura, Edad, Vestimenta)
     def getInfo(self):
-        print("El nombre es: ", self.__Nombre)
-        print("La edad es: ", self.__Edad)
-        print("La altura es:", self.__Altura)
-        print("La vestimenta es: ", self.__Vestimenta)
+        super().getInfo()
     def Solicitando(self):
         print("La persona esta solicitando empleo")
     def Buscando(self):
