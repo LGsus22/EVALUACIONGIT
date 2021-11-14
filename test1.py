@@ -16,4 +16,10 @@ if Puesto == 1:
     gerente.getInfo()
     gerente.Entrevistando()
 elif Puesto == 2:
-    empleado=Personal.
+    empleado=Personal.Empleado(Nombre,Altura,Edad,Vestimenta)
+    empleado.getInfo()
+    empleado.Trabajanto()
+elif Puesto == 3:
+    persona=Personal.Persona(Nombre,Altura,Edad,Vestimenta)
+    persona.getInfo()
+    persona.Solicitando()
