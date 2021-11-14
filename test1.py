@@ -2,8 +2,9 @@
 Jesus Peralta Tapia
 """
 import Personal
-print("Archivo modificado desde pycharm")
-print("Empresa 'TraditionalStart'")
+import Empresa
+empresa=Empresa.Company("TraditionalStart", "Zona centro, Calle Alfonzo Luna No.32", "Puesto de empleado")
+empresa.GetInfoEmpresa()
 Nombre=str(input("Ingrese su nombre: "))
 Altura=float(input("Ingrese su altura: "))
 Vestimenta=str(input("Ingrese su vestimenta: "))
